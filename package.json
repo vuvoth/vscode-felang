@@ -1,0 +1,25 @@
+{
+    "name": "felang",
+    "displayName": "felang",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fe-lang",
+            "aliases": ["Fe lang ", "fe-lang"],
+            "extensions": [".fe"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fe-lang",
+            "scopeName": "source.fe",
+            "path": "./syntaxes/fe-lang.tmLanguage.json"
+        }]
+    }
+}
