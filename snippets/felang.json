@@ -10,5 +10,17 @@
     "pub-function-create": {
         "prefix": "pf",
         "body": "pub fn ${1:Name}(${2:args}) {\n\t$0\n}"
+    },
+    "for-statement": {
+        "prefix": "for", 
+        "body": "for ${1:iter} in ${2:values} {\n\t$0\n}"
+    },
+    "if-statelemt": {
+        "prefix": "if", 
+        "body": "if ${1:condition} {\n\t$0\n}"
+    },
+    "if-else-statelemt": {
+        "prefix": "ife", 
+        "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}"
     }
 }
