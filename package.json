@@ -2,7 +2,7 @@
     "name": "felang",
     "displayName": "Fe lang",
     "description": "Fe lang for Visual Studio Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.68.0"
     },
@@ -14,6 +14,7 @@
         "type": "git",
         "url": "https://github.com/vuvoth/vscode-felang"
     },
+    "icon": "icons/fe.png",
     "contributes": {
         "languages": [
             {
