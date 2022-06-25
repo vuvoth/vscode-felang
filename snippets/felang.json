@@ -1,0 +1,30 @@
+{
+    "contract-definition": {
+        "prefix": "con",
+        "body": "contract ${1:Name} {\n\t$0\n}"
+    },
+    "struct-definition": {
+        "prefix": "stru",
+        "body": "struct ${1:Name} {\n\t$0\n}"
+    },
+    "pub-function-create": {
+        "prefix": "pf",
+        "body": "pub fn ${1:Name}(${2:args}) {\n\t$0\n}"
+    },
+    "for-statement": {
+        "prefix": "for", 
+        "body": "for ${1:iter} in ${2:values} {\n\t$0\n}"
+    },
+    "if-statement": {
+        "prefix": "if", 
+        "body": "if ${1:condition} {\n\t$0\n}"
+    },
+    "if-else-statement": {
+        "prefix": "ife", 
+        "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}"
+    },
+    "while-statement": {
+        "prefix": "while", 
+        "body": "while ${1:condition} {\n\t$0\n}"
+    }
+}

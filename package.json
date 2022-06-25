@@ -20,6 +20,12 @@
             "language": "fe-lang",
             "scopeName": "source.fe",
             "path": "./syntaxes/fe-lang.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+              "language": "fe-lang",
+              "path": "./snippets/felang.json"
+            }
+          ]
     }
 }
