@@ -6,15 +6,72 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#constants"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.fe-lang",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"comment": "control keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(if|else|while|for|break|continue|let)\\b"
+				},
+				{
+					"comment": "function keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(fn|return)\\b"
+				},
+				{
+					"comment": "module keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(use|pub|self)\\b"
+				}, 
+				{
+					"comment": "type keywords", 
+					"name": "storage.type.fe-lang",
+					"match": "\\b(contract|struct|bool|address|String|enum|map|((u|i)(8|16|32|64|128|256)))\\b"
+				},
+				{
+					"comment": "event keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(emit|event)\\b"	
+				},
+				{
+					"comment": "error keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(revert|assert)\\b"		
+				},
+				{
+					"comment": "trait keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(impl|for|trait)\\b"
+				}
+			]
+		},
+		"comments": {
+			"name": "comments",
+			"patterns": [
+				{
+					"name": "comment.line.fe-lang",
+					"match": "\\s*#.*"
+				}
+			]
+		},
+
+		"constants": {
+			"patterns": [
+				{
+					"include": "#string" 
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\b\\d+\\b"
+				}
+			] 
 		},
 		"strings": {
 			"name": "string.quoted.double.fe-lang",
