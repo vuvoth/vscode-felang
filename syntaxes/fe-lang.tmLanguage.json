@@ -33,12 +33,12 @@
 				{
 					"comment": "type keywords", 
 					"name": "storage.type.fe-lang",
-					"match": "\\b(contract|struct|bool|address|String|enum|map|Array|((u|i)(8|16|32|64|128|256)))\\b"
+					"match": "\\b(contract|struct|bool|address|String|enum|Map|Array|((u|i)(8|16|32|64|128|256)))\\b"
 				},
 				{
 					"comment": "event keywords",
 					"name": "keyword.control.fe-lang",
-					"match": "\\b(emit|event)\\b"	
+					"match": "\\b(emit|event|idx)\\b"	
 				},
 				{
 					"comment": "error keywords",
