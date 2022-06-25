@@ -6,18 +6,18 @@ Welcome any feelback!!!
 ## Features
 
 - Highlight syntax.
+- Snippets 
 
+## Screenshots
 ![Highligh syntax](./screenshots/highlight-syntax.png)
 
 ## TODO
 
-- [ ] Snippets.
 - [ ] LSP support.
-
 
 -----------------------------------------------------------------------------------------------------------
 
-### Fe Social
+## Fe Social
 
 * [Fe website](https://fe-lang.org/)
 * [Fe blog](https://blog.fe-lang.org/)
