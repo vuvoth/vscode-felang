@@ -18,7 +18,7 @@
 				{
 					"comment": "control keywords",
 					"name": "keyword.control.fe-lang",
-					"match": "\\b(if|else|while|for|break|continue|let)\\b"
+					"match": "\\b(if|else|while|for|break|continue|let|in)\\b"
 				},
 				{
 					"comment": "function keywords",
@@ -28,7 +28,7 @@
 				{
 					"comment": "module keywords",
 					"name": "keyword.control.fe-lang",
-					"match": "\\b(use|pub|self)\\b"
+					"match": "\\b(use|pub|self|mut)\\b"
 				}, 
 				{
 					"comment": "type keywords", 
@@ -70,6 +70,10 @@
 				{
 					"name": "constant.numeric",
 					"match": "\\b\\d+\\b"
+				},
+				{
+					"name": "constant.language.bool.fe-lang",
+					"match": "\\b(true|false)\\b"
 				}
 			] 
 		},
