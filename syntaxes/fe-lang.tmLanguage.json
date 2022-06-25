@@ -18,7 +18,7 @@
 				{
 					"comment": "control keywords",
 					"name": "keyword.control.fe-lang",
-					"match": "\\b(if|else|while|for|break|continue|let|in)\\b"
+					"match": "\\b(if|else|while|for|break|continue|let)\\b"
 				},
 				{
 					"comment": "function keywords",
@@ -33,7 +33,7 @@
 				{
 					"comment": "type keywords", 
 					"name": "storage.type.fe-lang",
-					"match": "\\b(contract|struct|bool|address|String|enum|map|((u|i)(8|16|32|64|128|256)))\\b"
+					"match": "\\b(contract|struct|bool|address|String|enum|map|Array|((u|i)(8|16|32|64|128|256)))\\b"
 				},
 				{
 					"comment": "event keywords",
@@ -49,6 +49,11 @@
 					"comment": "trait keywords",
 					"name": "keyword.control.fe-lang",
 					"match": "\\b(impl|for|trait)\\b"
+				},
+				{
+					"comment": "another keywords",
+					"name": "keyword.control.fe-lang",
+					"match": "\\b(as|in|unsafe)\\b"
 				}
 			]
 		},
