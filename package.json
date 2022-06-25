@@ -10,22 +10,35 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "fe-lang",
-            "aliases": ["Fe lang ", "fe-lang"],
-            "extensions": [".fe"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "fe-lang",
-            "scopeName": "source.fe",
-            "path": "./syntaxes/fe-lang.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "fe-lang",
+                "aliases": [
+                    "Fe lang ",
+                    "fe-lang"
+                ],
+                "extensions": [
+                    ".fe"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./icons/fe_source.svg",
+                    "dark": "./icons/fe_source.svg"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fe-lang",
+                "scopeName": "source.fe",
+                "path": "./syntaxes/fe-lang.tmLanguage.json"
+            }
+        ],
         "snippets": [
             {
-              "language": "fe-lang",
-              "path": "./snippets/felang.json"
+                "language": "fe-lang",
+                "path": "./snippets/felang.json"
             }
-          ]
+        ]
     }
 }
