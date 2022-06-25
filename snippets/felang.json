@@ -1,0 +1,14 @@
+{
+    "contract-definition": {
+        "prefix": "con",
+        "body": "contract ${1:Name} {\n\t$0\n}"
+    },
+    "struct-definition": {
+        "prefix": "stru",
+        "body": "struct ${1:Name} {\n\t$0\n}"
+    },
+    "pub-function-create": {
+        "prefix": "pf",
+        "body": "pub fn ${1:Name}(${2:args}) {\n\t$0\n}"
+    }
+}
