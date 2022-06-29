@@ -15,7 +15,10 @@
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"
 			],
-			"preLaunchTask": "${defaultBuildTask}"
+			"preLaunchTask": "${defaultBuildTask}",
+			"env": {
+				"SERVER_PATH": "/home/vuvoth/Desktop/EthereumProject/fe/target/debug/fe-lsp"
+			}
 		},
 		{
 			"name": "Extension Tests",
