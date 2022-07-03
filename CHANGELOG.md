@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- highlight for hex, oct and binary number 
+
+## [0.0.2] 
+
+- Small update
 ## [0.0.1] - 2022-06-25
 
 ### Feature 
