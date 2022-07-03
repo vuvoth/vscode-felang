@@ -41,11 +41,12 @@ let client: LanguageClient;
 // type a = Parameters<>;
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {	
+export function activate(context: vscode.ExtensionContext) {
 	const traceOutputChannel = window.createOutputChannel("Fe Language Server trace");
-	const command = process.env.SERVER_PATH || "fe-lsp";
+	const command = process.env.SERVER_PATH || "fe";
 	const run: Executable = {
 		command,
+		args: ["lsp"],
 		options: {
 			env: {
 				...process.env,

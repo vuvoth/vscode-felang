@@ -17,7 +17,7 @@
 			],
 			"preLaunchTask": "${defaultBuildTask}",
 			"env": {
-				"SERVER_PATH": "/home/vuvoth/Desktop/EthereumProject/fe/target/debug/fe-lsp"
+				"SERVER_PATH": "/home/vuvoth/Desktop/EthereumProject/fe/target/debug/fe"
 			}
 		},
 		{
