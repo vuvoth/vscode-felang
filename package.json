@@ -1,25 +1,21 @@
 {
   "name": "felang",
   "displayName": "felang",
-  "description": "",
-  "version": "0.0.1",
+  "description": "VS Code fe lang extension",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.68.0"
   },
+  "publisher": "vuvoth",
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Snippets"
   ],
   "activationEvents": [
     "onLanguage:fe-lang"
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "felang.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "languages": [
       {
         "id": "fe-lang",
