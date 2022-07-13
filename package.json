@@ -1,50 +1,96 @@
 {
-    "name": "felang",
-    "displayName": "Fe lang",
-    "description": "Fe lang for Visual Studio Code",
-    "version": "0.0.2",
-    "engines": {
-        "vscode": "^1.68.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "felang",
+  "displayName": "felang",
+  "description": "VS Code fe lang extension",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "publisher": "vuvoth",
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onLanguage:fe-lang"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "fe-lang",
+        "aliases": [
+          "Fe lang ",
+          "fe-lang"
+        ],
+        "extensions": [
+          ".fe"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/fe_source.svg",
+          "dark": "./icons/fe_source.svg"
+        }
+      }
     ],
-    "publisher": "vuvoth",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/vuvoth/vscode-felang"
-    },
-    "icon": "icons/fe.png",
-    "contributes": {
-        "languages": [
-            {
-                "id": "fe-lang",
-                "aliases": [
-                    "Fe lang ",
-                    "fe-lang"
-                ],
-                "extensions": [
-                    ".fe"
-                ],
-                "configuration": "./language-configuration.json",
-                "icon": {
-                    "light": "./icons/fe_source.svg",
-                    "dark": "./icons/fe_source.svg"
-                }
-            }
-        ],
-        "grammars": [
-            {
-                "language": "fe-lang",
-                "scopeName": "source.fe",
-                "path": "./syntaxes/fe-lang.tmLanguage.json"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "fe-lang",
-                "path": "./snippets/felang.json"
-            }
-        ]
+    "grammars": [
+      {
+        "language": "fe-lang",
+        "scopeName": "source.fe",
+        "path": "./syntaxes/fe-lang.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "fe-lang",
+        "path": "./snippets/felang.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "fe-language-server",
+      "properties": {
+        "fe-language-server.trace.server": {
+          "type": "string",
+          "scope": "window",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "enumDescriptions": [
+            "No traces",
+            "Error only",
+            "Full log"
+          ],
+          "default": "on",
+          "description": "Traces the communication between VS Code and the language server."
+        }
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.68.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.0.1"
+  }
 }
