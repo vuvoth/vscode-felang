@@ -1,6 +1,6 @@
 # Change Log
 
-## [Unreleased]
+## [0.0.3]
 
 - highlight for hex, oct and binary number 
 
